@@ -5,11 +5,22 @@ namespace MyTunes.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
-        public ActionResult Index()
-        {
-            return View();
-        }
+        
+       
+            public ActionResult Index()
+            {
+            Music music = new Music()
+            {
+                Album = "Controversy"
+            };
+            
+                
+               
+
+                return View(music);
+            }
+            
+        
 
 
 
