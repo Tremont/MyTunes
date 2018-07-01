@@ -5,15 +5,10 @@ using System.Web;
 
 namespace MyTunes.Models
 {
-    public class Music
+    public class Songs
     {
-        
-
-        
-        public string Album { get; set; }
-        public string Artist { get; set; }
-        
-
+        public String SongTitle { get; set; }
        
+
     }
 }
