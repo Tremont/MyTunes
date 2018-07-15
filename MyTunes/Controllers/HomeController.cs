@@ -14,14 +14,22 @@ namespace MyTunes.Controllers
             {
 
             Songs songs = new Songs();
-           // songs.SongTitle = new List<Music>();
-          
-            
-            
+            // songs.SongTitle = new List<Music>();
+
+
+
             Music music = new Music()
             {
                 Album = "Controversy",
-                Artist ="Prince"
+                Artist = "Prince",
+                Id = 0,
+                Jazz = "Muddy Waters",
+                Urban = "Commodores",
+                Pop = "Thriller",
+                RandB = "Confessions"
+
+                
+
             };
             
                 

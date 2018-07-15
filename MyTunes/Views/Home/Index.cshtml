@@ -9,11 +9,36 @@
     
 </head>
 <body>
-     <div class=" text-center jumbotron">
-      <h1 >MyTunes</h1>
-      </div> 
-    <div class="text-info h1">Album: @Model.Album</div>
-    <div class="h1">Artist: @Model.Artist</div>
+    <div class="jumbotron">
+    <h1>MyTunes</h1>
+    <p class="lead">MyTunes is a database to store or your music.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <h2>@Model.Jazz</h2>
+            <p>
+
+            </p>
+            <p><a class="btn btn-default" href="#">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+            <h2>@Model.Urban</h2>
+            <p></p>
+            <p><a class="btn btn-default" href="#">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+            <h2>@Model.RandB</h2>
+            <p></p>
+            <p><a class="btn btn-default" href="#">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+            <h2>@Model.Pop</h2>
+            <p></p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>
+    </div>
 
 
 </body>
