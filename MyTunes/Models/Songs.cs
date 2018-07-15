@@ -7,7 +7,7 @@ namespace MyTunes.Models
 {
     public class Songs
     {
-        public String SongTitle { get; set; }
+        public string SongTitle { get; set; }
        
 
     }

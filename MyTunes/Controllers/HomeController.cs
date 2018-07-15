@@ -1,6 +1,9 @@
 ﻿using MyTunes.Models;
 using System.Web.Mvc;
 using System.Collections.Generic;
+
+
+
 namespace MyTunes.Controllers
 {
     public class HomeController : Controller
@@ -9,8 +12,9 @@ namespace MyTunes.Controllers
        
             public ActionResult Index()
             {
+
             Songs songs = new Songs();
-            //songs.SongTitle = new List<Music>();
+           // songs.SongTitle = new List<Music>();
           
             
             

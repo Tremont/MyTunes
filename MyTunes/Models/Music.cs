@@ -9,7 +9,7 @@ namespace MyTunes.Models
     {
         
 
-        
+         
         public string Album { get; set; }
         public string Artist { get; set; }
         
