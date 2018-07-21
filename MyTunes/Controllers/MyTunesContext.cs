@@ -26,7 +26,11 @@ namespace MyTunes
                 Songs song = new Songs
                 {
 
-                    SongTitle = "When Doves Cry"
+                    SongTitle = "When Doves Cry",
+                    SongType = "Blues ",
+                    SongVideo = "Vimeo"
+
+
 
                 };
                  Songs.Add(song);
