@@ -151,6 +151,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Music.cs" />
+    <Compile Include="Models\MusicDb.cs" />
     <Compile Include="Models\Songs.cs" />
     <Compile Include="Controllers\MyTunesContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

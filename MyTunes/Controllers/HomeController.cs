@@ -1,6 +1,7 @@
 ﻿using MyTunes.Models;
 using System.Web.Mvc;
 using System.Collections.Generic;
+using System.Linq;
 
 
 
@@ -8,12 +9,14 @@ namespace MyTunes.Controllers
 {
     public class HomeController : Controller
     {
-        
+        private MyTunesContext db = new MyTunesContext();
        
             public ActionResult Index()
             {
-
-            Songs songs = new Songs();
+            
+            List<Songs> songs = (db.Songs.ToList());
+            
+            
             // songs.SongTitle = new List<Music>();
 
 
@@ -35,17 +38,28 @@ namespace MyTunes.Controllers
                 
                
 
-                return View(music);
+                return View(songs);
             }
-            
-        
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create (Songs song)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Songs.Add(song);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View();
+        }
 
 
 
-        
-            
 
-            
-        
+
+
+
     }
 }
