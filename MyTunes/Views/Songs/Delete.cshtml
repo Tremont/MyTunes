@@ -1,0 +1,59 @@
+﻿@model MyTunes.Models.Songs
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/StyleSheet1.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Songs</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.SongTitle)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SongTitle)
+            </dd>
+    
+            <dt>
+                @*@Html.DisplayNameFor(model => model.SongType)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SongType)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.SongVideo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SongVideo)
+            </dd>*@
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index") |
+            @Html.ActionLink("Main Page", "../Index","Songs")
+        </div>
+        }
+    </div>
+</body>
+</html>

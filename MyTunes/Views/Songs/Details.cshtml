@@ -1,0 +1,51 @@
+﻿@model MyTunes.Models.Songs
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Songs</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.SongTitle)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SongTitle)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.SongType)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SongType)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.SongVideo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SongVideo)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

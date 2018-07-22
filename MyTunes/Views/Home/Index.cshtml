@@ -1,39 +1,54 @@
 ﻿@model List<MyTunes.Models.Songs>
 @{
-    ViewBag.Title = "Index";
+                
+
+                ViewBag.Title = "Index";
+}
+<div class="jumbotron">
+    <h1>MyTunes</h1>
+    <p class="lead">MyTunes is a database to store or your music.</p>
+</div>
+
+@foreach (var song in Model)
+{
+    <div class="row">
+         
+
+        <div class="col-md-4">
+            <table>
+                <tr>
+                    <td>@song.SongTitle</td>
+                </tr>
+               
+            </table>
+
+
+
+        </div>
+
+    </div>
+    
+
+    
 }
 
-    <div class="jumbotron">
-        <h1>MyTunes</h1>
-        <p class="lead">MyTunes is a database to store or your music.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
-    @foreach (var song in Model) { 
+
+
     <div class="row">
-   
-        
-        <div class="col-md-4">
-            <h2>@song.SongTitle</h2>
-          
+        <div class="col-sm-12 col-md-6 pl-lg-4">
+            @Html.ActionLink("Add Song", "Create", "Songs")
+
         </div>
-        <div class="col-md-4">
-            <h2>@song.SongType</h2>
-            
-        </div>
-        <div class="col-md-4">
-            <h2>@song.SongVideo</h2>
-            
-        </div>
-        
     </div>
-    }
-
-    @*<div class="col-md-3">
-            <h2>@Model.Pop</h2>
-            <p></p>
-            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </div>*@
-
-
 
  
+
+
+@*<div class="col-md-3">
+        <h2>@Model.Pop</h2>
+        <p></p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>*@
+
+
+
