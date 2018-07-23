@@ -4,9 +4,10 @@
 
                 ViewBag.Title = "Index";
 }
-<div class="jumbotron">
+
+<div class="jumbotron jumbo">
     <h1>MyTunes</h1>
-    <p class="lead">MyTunes is a database to store or your music.</p>
+    <p>MyTunes is a database to store all your music.</p>
 </div>
 
 @foreach (var song in Model)
@@ -36,7 +37,9 @@
 
     <div class="row">
         <div class="col-sm-12 col-md-6 pl-lg-4">
-            @Html.ActionLink("Add Song", "Create", "Songs")
+            @Html.ActionLink("Add Song", "Create", "Songs") |
+            @Html.ActionLink("Songs List", "Index", "Songs" )
+           
 
         </div>
     </div>
