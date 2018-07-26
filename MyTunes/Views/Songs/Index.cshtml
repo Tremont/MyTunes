@@ -14,11 +14,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 </head>
-<body>
+<body class="container">
     <div class="jumbo">
         <table class="table">
             <tr>
-                <th>
+                <th class="songIndex">
                     @Html.DisplayNameFor(model => model.SongTitle)
                     @*</th>
                     <th>
@@ -27,7 +27,7 @@
                     <th>
                         @Html.DisplayNameFor(model => model.SongVideo)
                     </th>*@
-                <th></th>
+                <th>Options</th>
             </tr>
 
             @foreach (var item in Model)
@@ -36,12 +36,12 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.SongTitle)
                     </td>
-                    <td>
+                    @*<td>
                         @Html.DisplayFor(modelItem => item.SongType)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.SongVideo)
-                    </td>
+                    </td>*@
                     <td>
                         @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
                         @Html.ActionLink("Details", "Details", new { id = item.Id }) |
@@ -54,7 +54,7 @@
     </div>
 
     <p>
-        @Html.ActionLink("Create New", "Create") |
+        @Html.ActionLink("Add New Song", "Create") |
         @Html.ActionLink("Home", "Index", "Home")
     </p>
 </body>

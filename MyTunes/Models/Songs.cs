@@ -9,6 +9,7 @@ namespace MyTunes.Models
     public class Songs
     {
         public int Id { get; set; }
+        [Display(Name ="Song Title")]
         [Required]
         public string SongTitle { get; set; }
         public string SongType { get; set; }
