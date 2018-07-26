@@ -18,3 +18,12 @@ tr:nth-child(even) {
 .jumbo {
     background-color: rgb(196, 172, 106);
 }
+
+.songIndex{
+    text-decoration: underline;
+
+}
+
+.headColor {
+    background-color: rgb(196, 172, 106);
+}
