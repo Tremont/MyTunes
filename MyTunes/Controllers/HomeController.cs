@@ -13,7 +13,7 @@ namespace MyTunes.Controllers
        
             public ActionResult Index()
             {
-            
+            //currently only using list of type Songs to add songs to the database
             List<Songs> songs = (db.Songs.ToList());
             
             
