@@ -5,16 +5,19 @@ table {
     width: 100%;
 }
 
+/*style for table header and table data*/
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
 
+/*changes color for every other row in the table*/
 tr:nth-child(even) {
     background-color: #dddddd;
 }
 
+/*add background color to page header*/
 .jumbo {
     background-color: rgb(196, 172, 106);
 }
@@ -24,6 +27,7 @@ tr:nth-child(even) {
 
 }
 
-.headColor {
-    background-color: rgb(196, 172, 106);
-}
+/*body {
+    background: #F3EFE0;
+}*/
+
